@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource { //View controller a sen artık tableview için main olucaksın demek istiyoruz.
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if editingStyle == .delete {
             eatName.remove(at: indexPath.row)
             eatImage.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade) //deleteRows ile sütunlarda silme işlemi yapılabilir. Sonda ise animasyon
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade) 
             
         }
     }
